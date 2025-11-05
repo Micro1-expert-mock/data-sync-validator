@@ -16,7 +16,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
-
+// shipment data import
 
 def validate_sync(source_data, destination_data):
     """

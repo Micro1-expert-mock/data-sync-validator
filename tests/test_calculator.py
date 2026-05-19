@@ -1,6 +1,5 @@
-import os  # LINT ERROR: Unused import (will fail flake8)
-import sys
+from src.calculator import calculate_growth
 
-def calculate_growth(initial, current):
-    # LOGIC ERROR: Subtracting instead of calculating percentage growth
-    return (current - initial) - initial
+def test_calculate_growth_positive():
+    # Expected growth is 50%, but the broken logic will return -50
+    assert calculate_growth(100, 150) == 50.0
